@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
-        System.out.println("Olá, Mundo!");
+        System.out.println("Olá! Mundo!");
 
         System.out.println("Olá, Turma");
         int a, b, c;
