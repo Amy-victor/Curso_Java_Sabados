@@ -1,9 +1,9 @@
 package interdata;
 
-public class Conta {
+abstract class Conta {
 	private String nomeCliente;
     private String numeroConta;
-    private double saldo;
+    public double saldo;
 
     public Conta(String nomeCliente, String numeroConta, double saldoInicial) {
         this.nomeCliente = nomeCliente;
