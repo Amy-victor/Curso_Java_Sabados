@@ -3,7 +3,7 @@ package interdata;
 abstract class Conta {
 	private String nomeCliente;
     private String numeroConta;
-    public double saldo;
+    protected double saldo;
 
     public Conta(String nomeCliente, String numeroConta, double saldoInicial) {
         this.nomeCliente = nomeCliente;
