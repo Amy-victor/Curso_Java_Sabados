@@ -5,13 +5,13 @@ public class Banco {
     static Conta[] contas;
 
     public static void main(String[] args) {
-        contas[0] = new ContaCorrente("Alexandro", "001", 500);
+        contas[0] = new ContaCorrente("Alexandro", "001", 1000);
         contas[0].imprimirSaldo();
 
-        contas[1] = new ContaPoupanca("Amy", "002", 600);
+        contas[1] = new ContaPoupanca("Amy", "002", 1000);
         contas[1].imprimirSaldo();
 
-        ((ContaCorrente)contas[0]).CobrarTaxa(10);
+        ((ContaCorrente)contas[0]).cobrarTaxa(10);
 
         ((ContaPoupanca)contas[1]).bonificar();
 
@@ -28,6 +28,17 @@ public class Banco {
         }
 
         tranferir(contas[0], contas[1], 50);
+        System.out.println("---------------------------------");
+        for (Conta conta : contas){
+            if(conta != null){
+                if(conta instanceof ContaCorrente){
+                ((ContaCorrente)conta).cobrarTaxa(10);
+                }
+                if (conta instanceof ContaPoupanca){
+                ((ContaPoupanca)conta).bonificar();
+                }
+            }
+        }
     }
 
     public static void tranferir(Conta origem, Conta destino, double valor){

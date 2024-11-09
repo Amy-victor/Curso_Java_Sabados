@@ -6,7 +6,7 @@ public class ContaCorrente extends Conta{
         super(nomeCliente, numeroConta, saldoInicial);
     }
     
-    public double CobrarTaxa(double taxa){
+    public double cobrarTaxa(double taxa){
     saldo -= taxa;
      return saldo;
     }
