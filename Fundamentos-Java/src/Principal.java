@@ -10,7 +10,7 @@ public class Principal {
         c1.comer();
 
         Cachorro c2 = new Cachorro();
-        c2.nome = "Mila";
+        c2.nome = "Malu";
         c2.idade = 2;
         c2.sexo = 'F';
         c2.fazerBarulho();
